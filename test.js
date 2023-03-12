@@ -1,5 +1,5 @@
 $(document).ready (function(){
-    $.ajax({url: "../News-backend/display.php", success: function(result){
+    $.ajax({url: "display.php",datatype:"JSON", success: function(result){
 
         var breaking = ""
         $.each(result,function(i,row){
